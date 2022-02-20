@@ -1,9 +1,9 @@
 import React, { useMemo, createContext, useState } from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { grey } from '@mui/material/colors';
-import { Paper, CssBaseline } from '@mui/material'
+import { CssBaseline } from '@mui/material'
 
-import Home from './pages/Home';
+import Layout from './components/Layout';
 
 const handleTheme = (mode) => ({
   palette: {
@@ -13,6 +13,9 @@ const handleTheme = (mode) => ({
       ...(mode === 'light' && {
         main: '#fff',
       }),
+      ...(mode === 'dark' && {
+        main: '#61F8D5',
+      })
     },
     ...(mode === 'dark' && {
       background: {
@@ -25,10 +28,12 @@ const handleTheme = (mode) => ({
         ? {
           primary: grey[900],
           secondary: 'blue',
+          grey: '#8892b0'
         }
         : {
           primary: '#fff',
-          secondary: '#61F8D5'
+          secondary: '#61F8D5',
+          grey: '#8892b0'
         }),
     },
   },
@@ -48,9 +53,7 @@ function App() {
     <ThemeProvider theme={darkModeTheme}>
       <CssBaseline />
       <ThemeModeContext.Provider value={{ themeMode, setThemeMode }}>
-        <Paper>
-          <Home />
-        </Paper>
+        <Layout />
       </ThemeModeContext.Provider>
     </ThemeProvider>
 

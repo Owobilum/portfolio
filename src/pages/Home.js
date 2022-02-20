@@ -1,9 +1,12 @@
-import Header from "../components/Header";
+import { Box } from "@mui/material";
+import Hero from "../components/sections/Hero";
 
 export default function Home() {
     return (
-        <>
-            <Header />
-        </>
+        <Box
+            sx={{ padding: '2% 5%' }}
+        >
+            <Hero />
+        </Box>
     )
 }
