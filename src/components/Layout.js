@@ -1,11 +1,31 @@
+import React from 'react'
+import { Grid } from '@mui/material'
+
 import Home from '../pages/Home'
 import Header from './Header'
+import NavEmail from './NavEmail'
+import SocialList from './SocialList'
 
 const Layout = () => {
+
     return (
         <>
             <Header />
-            <Home />
+            <Grid container
+                sx={{
+                    px: '3%'
+                }}
+            >
+                <Grid item xs={1} sx={{ display: { xs: 'none', md: 'block' } }}>
+                    <SocialList />
+                </Grid>
+                <Grid item xs={10}>
+                    <Home />
+                </Grid>
+                <Grid item xs={1} sx={{ display: { xs: 'none', md: 'block' } }}>
+                    <NavEmail />
+                </Grid>
+            </Grid>
         </>
     )
 }
