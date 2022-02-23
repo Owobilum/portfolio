@@ -6,7 +6,7 @@ import { StyledHandEmoji } from "../StyledHandEmoji";
 
 const Hero = () => {
     return (
-        <>
+        <Box sx={{ pb: { xs: '100px', md: '200px' } }}>
             <Typography variant="body1" component="p" color="text.secondary">
                 Hi,<span><StyledHandEmoji /></span> my name is
             </Typography>
@@ -58,7 +58,7 @@ const Hero = () => {
                 </StyledButton>
             </Box>
 
-        </>
+        </Box>
     )
 }
 
