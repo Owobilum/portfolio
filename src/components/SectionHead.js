@@ -30,7 +30,7 @@ const SectionHead = ({ place, title }) => {
                 component="span"
                 sx={{
                     color: 'text.grey',
-                    fontSize: 32,
+                    fontSize: { xs: 20, md: 32 },
                     fontWeight: 700
                 }}
             >

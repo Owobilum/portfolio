@@ -17,10 +17,17 @@ const handleTheme = (mode) => ({
         main: '#61F8D5',
       })
     },
-    ...(mode === 'dark' && {
+    ...(mode === 'dark' ? {
       background: {
         default: '#0A192F',
-        paper: '#0A192F'
+        paper: '#0A192F',
+        medium: '#112240'
+      },
+    } : {
+      background: {
+        default: '#ffffff',
+        paper: '#ffffff',
+        medium: '#fefefe'
       },
     }),
     text: {
@@ -28,12 +35,14 @@ const handleTheme = (mode) => ({
         ? {
           primary: grey[900],
           secondary: 'blue',
-          grey: '#8892b0'
+          grey: '#8892b0',
+          icon: '##8892b0'
         }
         : {
           primary: '#fff',
           secondary: '#61F8D5',
-          grey: '#8892b0'
+          grey: '#8892b0',
+          icon: '#fff'
         }),
     },
   },
