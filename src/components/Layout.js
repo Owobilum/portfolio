@@ -14,16 +14,16 @@ const Layout = () => {
             <Header />
             <Grid container
                 sx={{
-                    px: '3%'
+                    px: '3%',
                 }}
             >
-                <Grid item xs={1} sx={{ display: { xs: 'none', md: 'block' } }}>
+                <Grid item md={1} sx={{ display: { xs: 'none', md: 'block' } }}>
                     <SocialList />
                 </Grid>
-                <Grid item xs={10}>
+                <Grid item xs={12} md={10}>
                     <Home />
                 </Grid>
-                <Grid item xs={1} sx={{ display: { xs: 'none', md: 'block' } }}>
+                <Grid item md={1} sx={{ display: { xs: 'none', md: 'block' } }}>
                     <NavEmail />
                 </Grid>
             </Grid>
