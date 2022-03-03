@@ -12,7 +12,8 @@ const LiveProject = ({ project: { title, description, stack, site } }) => {
             }}
         >
             <Box sx={{ textAlign: 'right' }}>
-                <Box component="a" href={site} target="_blank"
+                <Box
+                    //    component="a" href={site} target="_blank"
                     sx={{ mx: 2, color: 'text.grey' }}
                 >
                     <OpenInBrowserIcon />
