@@ -5,6 +5,7 @@ import Home from '../pages/Home'
 import Header from './Header'
 import NavEmail from './NavEmail'
 import SocialList from './SocialList'
+import Footer from './Footer'
 
 const Layout = () => {
 
@@ -26,6 +27,7 @@ const Layout = () => {
                     <NavEmail />
                 </Grid>
             </Grid>
+            <Footer />
         </>
     )
 }

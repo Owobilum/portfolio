@@ -1,6 +1,7 @@
-import { Box, Typography, Stack } from '@mui/material'
+import { Box, Typography, Stack, useMediaQuery } from '@mui/material'
 
 const Contact = () => {
+    const isMobile = useMediaQuery('(max-width:450px)');
     return (
         <Stack
             spacing={2}
@@ -23,7 +24,7 @@ const Contact = () => {
                 my inbox is open. I'll get back to you ASAP!
             </Typography>
             <Box sx={{ padding: '20px 30px' }}>
-                <Box component="a" href="mailto:lawrenceikpebe@gmail.com"
+                <Box component="a" href={isMobile ? "tel:+2347060940861" : "mailto:lawrenceikpebe@gmail.com"}
                     sx={{
                         border: '1px solid',
                         borderColor: 'text.secondary',
