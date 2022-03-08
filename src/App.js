@@ -89,7 +89,7 @@ function App() {
           justifyContent: 'center',
           alignItems: 'center',
           backgroundColor: '#0A192F',
-          color: '#fff',
+          color: '#61F8D5',
           fontSize: 40,
           fontFamily: "cursive"
         }}
