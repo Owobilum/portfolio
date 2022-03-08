@@ -4,7 +4,7 @@ import { Grid, Box, Typography, Toolbar, AppBar } from '@mui/material'
 import ThemeToggle from './ThemeToggle';
 import MobileDrawer from './MobileDrawer';
 
-const navItems = ['About', 'Skills', 'Work', 'Contact']
+const navItems = ['About', 'Skills', 'Projects', 'Contact']
 
 const Header = () => {
 
@@ -19,11 +19,11 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" elevation={0} sx={{ px: '5%', maxWidth: '100%' }}>
+    <AppBar position="static" elevation={0} sx={{ px: '5%', py: 3, maxWidth: '100%' }}>
       <Toolbar disableGutters>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
-            <h1 style={{ color: '#61F8D5' }}>Logo</h1>
+            <Typography variant="h4" sx={{ color: 'text.secondary' }}>{"<DevLaw />"}</Typography>
           </Grid>
           <Grid item sx={{ display: { xs: 'block', md: 'none' } }}>
             <MobileDrawer isOpen={isOpen} toggleDrawer={toggleDrawer} navItems={navItems} />
@@ -41,11 +41,13 @@ const Header = () => {
                         display: 'inline-block',
                         mx: 2,
                         cursor: 'pointer',
+                        color: 'text.grey',
                         ":hover": {
                           color: 'text.secondary'
                         },
                         fontSize: 13
                       }}
+                      onClick={() => window.location.replace(`/#${item?.toLocaleLowerCase()}`)}
                     >
                       <Typography component={"span"} sx={{ color: 'text.secondary', fontSize: 13 }}>
                         {`0${index + 1}. `}

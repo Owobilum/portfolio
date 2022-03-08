@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material"
 
 const Footer = () => {
     return (
-        <Box sx={{ textAlign: 'center', py: 3 }}>
+        <Box sx={{ textAlign: 'center', py: 3, color: 'text.grey' }}>
             <Typography component="p">
                 Built by Lawrence Ikpebe
             </Typography>

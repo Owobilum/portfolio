@@ -4,22 +4,22 @@ import { Box, Grid, Typography } from '@mui/material'
 import SectionHead from '../SectionHead'
 import lawrence from "../../images/lawrence.jpg"
 import { StyledLink } from "../StyledLink";
+import SectionLayout from '../SectionLayout';
 
 
 const AboutMe = () => {
     const [isHovered, setIsHovered] = useState(false)
     return (
-        <Box
-            sx={{ pb: { xs: '100px', md: '200px' } }}
-        >
+        <SectionLayout>
             <Box sx={{ mb: 5 }}>
-                <SectionHead place={"01"} title={"About Me"} />
+                <SectionHead place={"01"} title={"About Me"} id="about" />
             </Box>
             <Grid container>
                 <Grid item xs={12} md={6}
                     sx={{
                         paddingRight: { xs: 0, md: 5 },
-                        mb: 3
+                        mb: 3,
+                        color: 'text.grey'
                     }}
                 >
                     <Typography variant="body1" component="p" sx={{ mb: 3 }}>
@@ -76,7 +76,7 @@ const AboutMe = () => {
 
                 </Grid>
             </Grid>
-        </Box>
+        </SectionLayout>
     )
 }
 

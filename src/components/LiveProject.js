@@ -8,7 +8,7 @@ const LiveProject = ({ project: { title, description, stack, site } }) => {
                 backgroundColor: 'background.medium',
                 padding: '32px 16px',
                 borderRadius: '5px',
-                height: '100%'
+                height: '100%',
             }}
         >
             <Box sx={{ textAlign: 'right' }}>
@@ -19,7 +19,7 @@ const LiveProject = ({ project: { title, description, stack, site } }) => {
                     <OpenInBrowserIcon />
                 </Box>
             </Box>
-            <Typography component="p" sx={{ fontWeight: 700 }}>
+            <Typography component="p" sx={{ fontWeight: 700, }}>
                 {title}
             </Typography>
             <Typography component="p" sx={{ py: 2, color: 'text.grey' }}>

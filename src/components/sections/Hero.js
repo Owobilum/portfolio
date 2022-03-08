@@ -3,10 +3,11 @@ import { Typography, Box } from "@mui/material"
 import { StyledLink } from "../StyledLink";
 import { StyledButton } from "../StyledButton";
 import { StyledHandEmoji } from "../StyledHandEmoji";
+import SectionLayout from "../SectionLayout";
 
 const Hero = () => {
     return (
-        <Box sx={{ pb: { xs: '100px', md: '200px' } }}>
+        <SectionLayout>
             <Typography variant="body1" component="p" color="text.secondary">
                 Hi,<span><StyledHandEmoji /></span> my name is
             </Typography>
@@ -57,8 +58,7 @@ const Hero = () => {
                     View My Resume
                 </StyledButton>
             </Box>
-
-        </Box>
+        </SectionLayout>
     )
 }
 

@@ -1,14 +1,27 @@
-import { Box, Grid, Tooltip } from "@mui/material"
+import React from 'react'
+import { Box, Grid, Tooltip, Typography } from "@mui/material"
 
 import SectionHead from "../SectionHead"
 import { skillsData } from "../../utility/data/skillsData"
+import SectionLayout from "../SectionLayout"
 
 const Skills = () => {
     return (
-        <Box>
-            <SectionHead place={"02"} title={"My Skills"} />
+        <SectionLayout>
+            <SectionHead place={"02"} title={"My Skills"} id="skills" />
+            <Typography
+                component="p"
+                sx={{
+                    color: 'text.grey',
+                    my: 3,
+                    maxWidth: 600
+                }}
+            >
+                I love learning! I'm currently learning about Web3 (Ethers JS and Solidity).
+                Below is a list of technologies I've worked with recently:
+            </Typography>
             <Grid container
-                sx={{ pb: { xs: '100px', md: '200px' }, px: '5%', maxWidth: '100%', ml: '1px', my: 1, }}
+                sx={{ px: '5%', maxWidth: '100%', ml: '1px', my: 1, }}
                 spacing={5}
             >
                 {
@@ -25,7 +38,7 @@ const Skills = () => {
                 }
 
             </Grid>
-        </Box>
+        </SectionLayout>
     )
 }
 

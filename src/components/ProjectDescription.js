@@ -15,6 +15,7 @@ const ProjectDescription = ({ data: { title, description, github, site, stack } 
                 flexDirection: 'column',
                 justifyContent: 'center',
                 alignItems: 'flex-end',
+                pr: { xs: 1, md: 0 }
             }}
         >
             <Typography component="p"
@@ -23,7 +24,7 @@ const ProjectDescription = ({ data: { title, description, github, site, stack } 
                 Featured Project
             </Typography>
             <Typography component="p"
-                sx={{ fontSize: 18, textTransform: 'uppercase' }}
+                sx={{ fontSize: 18, textTransform: 'uppercase', color: 'text.primary' }}
             >
                 {title}
             </Typography>
