@@ -9,7 +9,7 @@ const SectionHead = ({ place, title }) => {
                     content: "''",
                     position: 'absolute',
                     bottom: '50%',
-                    width: { xs: '50px', md: '20%' },
+                    width: { xs: '15%', md: '20%' },
                     marginLeft: '5%',
                     borderBottom: 'solid 1px',
                     borderColor: 'text.grey'
@@ -20,7 +20,7 @@ const SectionHead = ({ place, title }) => {
                 component="span"
                 sx={{
                     color: 'text.secondary',
-                    fontSize: 24,
+                    fontSize: { xs: 16, sm: 20, md: 32 },
                     marginRight: '8px'
                 }}
             >
@@ -29,8 +29,8 @@ const SectionHead = ({ place, title }) => {
             <Box
                 component="span"
                 sx={{
-                    color: 'text.grey',
-                    fontSize: { xs: 20, md: 32 },
+                    color: 'text.primary',
+                    fontSize: { xs: 16, sm: 20, md: 32 },
                     fontWeight: 700
                 }}
             >

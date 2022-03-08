@@ -2,13 +2,14 @@ import { Box, Grid, Tooltip } from "@mui/material"
 
 import SectionHead from "../SectionHead"
 import { skillsData } from "../../utility/data/skillsData"
+import SectionLayout from "../SectionLayout"
 
 const Skills = () => {
     return (
-        <Box>
+        <SectionLayout>
             <SectionHead place={"02"} title={"My Skills"} />
             <Grid container
-                sx={{ pb: { xs: '100px', md: '200px' }, px: '5%', maxWidth: '100%', ml: '1px', my: 1, }}
+                sx={{ px: '5%', maxWidth: '100%', ml: '1px', my: 1, }}
                 spacing={5}
             >
                 {
@@ -25,7 +26,7 @@ const Skills = () => {
                 }
 
             </Grid>
-        </Box>
+        </SectionLayout>
     )
 }
 

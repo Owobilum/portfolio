@@ -23,7 +23,7 @@ const Header = () => {
       <Toolbar disableGutters>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
-            <h1 style={{ color: '#61F8D5' }}>Logo</h1>
+            <h1 style={{ color: 'text.secondary' }}>Logo</h1>
           </Grid>
           <Grid item sx={{ display: { xs: 'block', md: 'none' } }}>
             <MobileDrawer isOpen={isOpen} toggleDrawer={toggleDrawer} navItems={navItems} />
@@ -41,6 +41,7 @@ const Header = () => {
                         display: 'inline-block',
                         mx: 2,
                         cursor: 'pointer',
+                        color: 'text.grey',
                         ":hover": {
                           color: 'text.secondary'
                         },

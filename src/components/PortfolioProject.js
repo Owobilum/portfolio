@@ -11,12 +11,14 @@ const PortfolioProject = ({ project: { title, img, description, stack, github, s
                 display: 'flex',
                 height: 350,
                 position: 'relative',
-                my: 3
+                my: 3,
             }}
         >
             {/* ONE */}
             <Box
-                sx={{ flex: 2, }}
+                sx={{
+                    flex: 2,
+                }}
             >
                 <Box component="a" href={site} target="_blank">
                     <Box component="img" src={img}
@@ -48,7 +50,7 @@ const PortfolioProject = ({ project: { title, img, description, stack, github, s
                     right: { xs: 0, sm: '' },
                     opacity: { xs: 0.9, md: 1 },
                     backgroundColor: 'background.default',
-                    color: 'text.grey'
+                    color: { sx: 'text.primary', sm: 'text.grey' }
                 }}
             >
                 <ProjectDescription data={{ description, title, site, github, stack }} />

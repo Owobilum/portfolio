@@ -4,10 +4,11 @@ import PortfolioProject from '../PortfolioProject'
 import SectionHead from '../SectionHead'
 import { porfolioProjectData, liveProjectData } from '../../utility/data/projectData'
 import LiveProject from '../LiveProject'
+import SectionLayout from '../SectionLayout'
 
 const Projects = () => {
     return (
-        <Box>
+        <SectionLayout>
             <SectionHead place={'03'} title="Some Things I've Built" />
             <Typography component="p" sx={{ my: 5, color: 'text.secondary' }}>
                 Portfolio Projects
@@ -35,7 +36,7 @@ const Projects = () => {
                             <Box component="a" href={project.site} target="_blank"
                                 sx={{
                                     textDecoration: 'none',
-                                    color: 'text.grey',
+                                    color: 'text.primary',
                                     ":hover": {
                                         color: 'text.secondary'
                                     }
@@ -47,7 +48,7 @@ const Projects = () => {
                     ))
                 }
             </Grid>
-        </Box>
+        </SectionLayout>
     )
 }
 
