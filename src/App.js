@@ -27,16 +27,16 @@ const handleTheme = (mode) => ({
       background: {
         default: '#ffffff',
         paper: '#ffffff',
-        medium: '#fefefe'
+        medium: '#e3e3e3'
       },
     }),
     text: {
       ...(mode === 'light'
         ? {
           primary: grey[900],
-          secondary: 'blue',
-          grey: '#8892b0',
-          icon: '##8892b0'
+          secondary: '#317c6b',
+          grey: '#606060',
+          icon: '#000'
         }
         : {
           primary: '#fff',

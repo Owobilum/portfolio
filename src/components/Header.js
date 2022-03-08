@@ -23,7 +23,7 @@ const Header = () => {
       <Toolbar disableGutters>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
-            <h1 style={{ color: 'text.secondary' }}>Logo</h1>
+            <Typography variant="h4" sx={{ color: 'text.secondary' }}>Logo</Typography>
           </Grid>
           <Grid item sx={{ display: { xs: 'block', md: 'none' } }}>
             <MobileDrawer isOpen={isOpen} toggleDrawer={toggleDrawer} navItems={navItems} />
