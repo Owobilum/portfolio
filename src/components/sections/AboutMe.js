@@ -12,7 +12,7 @@ const AboutMe = () => {
     return (
         <SectionLayout>
             <Box sx={{ mb: 5 }}>
-                <SectionHead place={"01"} title={"About Me"} />
+                <SectionHead place={"01"} title={"About Me"} id="about" />
             </Box>
             <Grid container>
                 <Grid item xs={12} md={6}

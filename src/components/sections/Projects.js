@@ -9,7 +9,7 @@ import SectionLayout from '../SectionLayout'
 const Projects = () => {
     return (
         <SectionLayout>
-            <SectionHead place={'03'} title="Some Things I've Built" />
+            <SectionHead place={'03'} title="Some Things I've Built" id="projects" />
             <Typography component="p" sx={{ my: 5, color: 'text.secondary' }}>
                 Portfolio Projects
             </Typography>

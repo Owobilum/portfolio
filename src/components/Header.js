@@ -4,7 +4,7 @@ import { Grid, Box, Typography, Toolbar, AppBar } from '@mui/material'
 import ThemeToggle from './ThemeToggle';
 import MobileDrawer from './MobileDrawer';
 
-const navItems = ['About', 'Skills', 'Work', 'Contact']
+const navItems = ['About', 'Skills', 'Projects', 'Contact']
 
 const Header = () => {
 
@@ -47,6 +47,7 @@ const Header = () => {
                         },
                         fontSize: 13
                       }}
+                      onClick={() => window.location.replace(`/#${item?.toLocaleLowerCase()}`)}
                     >
                       <Typography component={"span"} sx={{ color: 'text.secondary', fontSize: 13 }}>
                         {`0${index + 1}. `}

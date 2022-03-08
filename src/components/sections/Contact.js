@@ -13,6 +13,7 @@ const Contact = () => {
                     margin: '0 auto',
                     color: 'text.grey'
                 }}
+                id="contact"
             >
                 <Typography component="p" color="text.secondary">
                     04. What's Next?
