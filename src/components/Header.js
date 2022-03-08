@@ -19,11 +19,11 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" elevation={0} sx={{ px: '5%', maxWidth: '100%' }}>
+    <AppBar position="static" elevation={0} sx={{ px: '5%', py: 3, maxWidth: '100%' }}>
       <Toolbar disableGutters>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
-            <Typography variant="h4" sx={{ color: 'text.secondary' }}>Logo</Typography>
+            <Typography variant="h4" sx={{ color: 'text.secondary' }}>{"<DevLaw />"}</Typography>
           </Grid>
           <Grid item sx={{ display: { xs: 'block', md: 'none' } }}>
             <MobileDrawer isOpen={isOpen} toggleDrawer={toggleDrawer} navItems={navItems} />

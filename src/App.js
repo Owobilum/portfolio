@@ -1,4 +1,4 @@
-import React, { useMemo, createContext, useState } from 'react'
+import React, { useMemo, createContext, useState, useEffect } from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { grey } from '@mui/material/colors';
 import { CssBaseline } from '@mui/material'
@@ -50,13 +50,54 @@ const handleTheme = (mode) => ({
     fontFamily: ['Recursive', 'sans-serif'].join(',')
   }
 });
-
 export const ThemeModeContext = createContext('darkModeTheme')
 
+const wordStore = ['W', 'E', 'L', 'C', 'O', 'M', 'E', `${String.fromCodePoint(0x1F600)}`]
+const keyDelay = 500
 function App() {
   const [themeMode, setThemeMode] = useState('dark')
+  const [loading, setLoading] = useState(true)
+  const [displayedWord, setDisplayedWord] = React.useState('')
+
+  const handleWelcome = () => {
+    setTimeout(() => {
+      setLoading(false)
+    }, (wordStore.length * keyDelay) + 1000)
+    for (let i = 0; i < wordStore.length; i++) {
+      setTimeout(() => {
+        setDisplayedWord(prev => prev + wordStore[i])
+      }, ((i + 1) * keyDelay))
+    }
+  }
+
+  useEffect(() => {
+    handleWelcome()
+  }, [])
 
   const darkModeTheme = useMemo(() => createTheme(handleTheme(themeMode)), [themeMode])
+
+  if (loading) {
+    return (
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#0A192F',
+          color: '#fff',
+          fontSize: 40,
+          fontFamily: "cursive"
+        }}
+      >
+        <p>{displayedWord}</p>
+      </div>
+    )
+  }
 
   return (
     <ThemeProvider theme={darkModeTheme}>
