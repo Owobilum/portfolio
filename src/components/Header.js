@@ -34,7 +34,7 @@ const Header = () => {
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
             <Typography variant="h6" sx={{ color: 'text.secondary', cursor: 'pointer' }}
-              onClick={() => window.location.replace('/')}
+            // onClick={() => window.location.replace('/')}
             >
               {"<DevLaw />"}
             </Typography>
