@@ -53,7 +53,7 @@ const handleTheme = (mode) => ({
 export const ThemeModeContext = createContext('darkModeTheme')
 
 const wordStore = ['W', 'E', 'L', 'C', 'O', 'M', 'E', `${String.fromCodePoint(0x1F600)}`]
-const keyDelay = 500
+const keyDelay = 250
 function App() {
   const [themeMode, setThemeMode] = useState('dark')
   const [loading, setLoading] = useState(true)

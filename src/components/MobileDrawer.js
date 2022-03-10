@@ -28,6 +28,7 @@ export default function MobileDrawer({ isOpen, toggleDrawer, navItems }) {
                                     my: 2,
                                     textAlign: 'center',
                                 }}
+                                onClick={() => window.location.replace(`/#${item?.toLocaleLowerCase()}`)}
                             >
                                 <Typography component={"span"} variant="body1" sx={{ color: 'text.secondary' }}>{`0${index + 1}.`}<br /></Typography>
                                 {item}

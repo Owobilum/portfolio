@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@mui/material'
+import { Grid, Box } from '@mui/material'
 
 import Home from '../pages/Home'
 import Header from './Header'
@@ -10,7 +10,7 @@ import Footer from './Footer'
 const Layout = () => {
 
     return (
-        <>
+        <Box sx={{ maxWidth: { xl: '1800px' }, mx: { xl: 'auto' } }}>
             <Header />
             <Grid container
                 sx={{
@@ -28,7 +28,7 @@ const Layout = () => {
                 </Grid>
             </Grid>
             <Footer />
-        </>
+        </Box>
     )
 }
 
