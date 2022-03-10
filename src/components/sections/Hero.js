@@ -16,7 +16,7 @@ const Hero = () => {
                 component="h1"
                 sx={{
                     fontWeight: 700,
-                    fontSize: { xs: 30, md: 70 },
+                    fontSize: { xs: 30, md: 55 },
                     my: 1
                 }}
             >
@@ -26,7 +26,7 @@ const Hero = () => {
                 variant="h3"
                 sx={{
                     fontWeight: 700,
-                    fontSize: { xs: 24, md: 65 },
+                    fontSize: { xs: 24, md: 45 },
                     my: 1
                 }}
                 color="text.grey"
@@ -54,7 +54,10 @@ const Hero = () => {
                     width: { xs: '80%', md: '200px' },
                 }}
             >
-                <StyledButton>
+                <StyledButton
+                    href="https://drive.google.com/file/d/1sPgB1izHhbfPxfcPDf8Rka4e3ihxYV4m/view?usp=sharing"
+                    target="_blank"
+                >
                     View My Resume
                 </StyledButton>
             </Box>
