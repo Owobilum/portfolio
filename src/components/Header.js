@@ -61,7 +61,7 @@ const Header = () => {
                         },
                         fontSize: 13
                       }}
-                      onClick={() => window.location.replace(`/#${item?.toLocaleLowerCase()}`)}
+                      onClick={() => window.location.replace(`/portfolio-v2/#${item?.toLocaleLowerCase()}`)}
                     >
                       <Typography component={"span"} sx={{ color: 'text.secondary', fontSize: 13 }}>
                         {`0${index + 1}. `}
