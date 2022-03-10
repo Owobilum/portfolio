@@ -8,7 +8,7 @@ import SectionLayout from "../SectionLayout";
 const Hero = () => {
     return (
         <SectionLayout>
-            <Typography variant="body1" component="p" color="text.secondary">
+            <Typography variant="body1" component="p" color="text.secondary" sx={{ mt: '100px' }}>
                 Hi,<span><StyledHandEmoji /></span> my name is
             </Typography>
             <Typography
@@ -42,7 +42,7 @@ const Hero = () => {
                 }}
                 color="text.grey"
             >
-                I'm a software engineer specializing in building
+                I'm a Front-end Engineer specializing in building
                 exceptional digital experiences. Currently, I'm focused on building accessible,
                 human-centered products at <StyledLink href="https://irecharge.ng">iRecharge</StyledLink>.
             </Typography>

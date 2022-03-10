@@ -11,7 +11,8 @@ const Contact = () => {
                     maxWidth: { xs: 300, md: 600 },
                     textAlign: 'center',
                     margin: '0 auto',
-                    color: 'text.grey'
+                    color: 'text.grey',
+                    pt: '90px'
                 }}
                 id="contact"
             >

@@ -1,11 +1,13 @@
 import React from 'react'
-import { Box, Grid, Tooltip, Typography } from "@mui/material"
+import { Box, Grid, Tooltip, Typography, useMediaQuery } from "@mui/material"
 
 import SectionHead from "../SectionHead"
 import { skillsData } from "../../utility/data/skillsData"
 import SectionLayout from "../SectionLayout"
 
 const Skills = () => {
+    const isMobile = useMediaQuery('(max-width:599px)')
+
     return (
         <SectionLayout>
             <SectionHead place={"02"} title={"My Skills"} id="skills" />
@@ -22,7 +24,7 @@ const Skills = () => {
             </Typography>
             <Grid container
                 sx={{ px: '5%', maxWidth: '100%', ml: '1px', my: 1, }}
-                spacing={5}
+                spacing={isMobile ? 2 : 4}
             >
                 {
                     skillsData && skillsData.map(({ name, logo }) => (

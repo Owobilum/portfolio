@@ -2,7 +2,8 @@ import { Box, Typography } from '@mui/material'
 
 const SectionHead = ({ place, title, id }) => {
     return (
-        <Box id={id} sx={{ pt: 3 }}>
+        // <Box id={id} sx={{ pt: 3 }}>
+        <Box id={id} sx={{ pt: '90px' }}>
             <Typography component="h2"
                 sx={{
                     position: 'relative',
