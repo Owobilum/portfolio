@@ -61,12 +61,16 @@ const Header = () => {
                         },
                         fontSize: 13
                       }}
-                      onClick={() => window.location.replace(`/portfolio-v2/#${item?.toLocaleLowerCase()}`)}
+                    // onClick={() => window.location.replace(`/portfolio-v2/#${item?.toLocaleLowerCase()}`)}
                     >
-                      <Typography component={"span"} sx={{ color: 'text.secondary', fontSize: 13 }}>
-                        {`0${index + 1}. `}
-                      </Typography>
-                      {item}
+                      <a href={`#${item?.toLocaleLowerCase()}`}
+                        style={{ textDecoration: 'none', color: 'inherit' }}
+                      >
+                        <Typography component={"span"} sx={{ color: 'text.secondary', fontSize: 13 }}>
+                          {`0${index + 1}. `}
+                        </Typography>
+                        {item}
+                      </a>
                     </Typography>
                   ))
                 }
