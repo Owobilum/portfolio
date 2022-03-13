@@ -11,7 +11,7 @@ const PortfolioProject = ({ project: { title, img, description, stack, github, s
                 display: 'flex',
                 height: 350,
                 position: 'relative',
-                my: 3,
+                my: '50px',
             }}
         >
             {/* ONE */}

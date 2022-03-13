@@ -18,7 +18,7 @@ const Projects = () => {
                     <PortfolioProject key={project.title} project={project} />
                 ))
             }
-            <Typography component="p" sx={{ my: 5, color: 'text.secondary' }}>
+            <Typography component="p" sx={{ mb: 5, mt: '100px', color: 'text.secondary' }}>
                 Live Projects
             </Typography>
             <Grid container spacing={2}>

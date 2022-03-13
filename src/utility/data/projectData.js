@@ -1,4 +1,5 @@
 import kioskImg from "../../images/kiosk.png"
+import lendsqrImg from "../../images/lendsqr.png"
 
 export const porfolioProjectData = [
     {
@@ -8,6 +9,14 @@ export const porfolioProjectData = [
         stack: ['Next Js', 'Redux', 'Material UI', 'Firebase'],
         github: 'https://github.com/Owobilum/kiosk',
         site: 'https://kiosk-hazel.vercel.app/'
+    },
+    {
+        img: lendsqrImg,
+        title: "Lendsqr Dashboard",
+        description: "Responsive dashboard UI for a Fintech company, comprising of; Login, Users and User-Detail screens",
+        stack: ['React JS', 'SASS'],
+        github: 'https://github.com/Owobilum/lendsqr-dashboard',
+        site: 'https://lendsqr-dashboard.herokuapp.com/'
     }
 ]
 
