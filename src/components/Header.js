@@ -61,7 +61,6 @@ const Header = () => {
                         },
                         fontSize: 13
                       }}
-                    // onClick={() => window.location.replace(`/portfolio-v2/#${item?.toLocaleLowerCase()}`)}
                     >
                       <a href={`#${item?.toLocaleLowerCase()}`}
                         style={{ textDecoration: 'none', color: 'inherit' }}
