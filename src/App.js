@@ -1,11 +1,10 @@
-import React, { useMemo, createContext, useState, Suspense } from 'react'
+import React, { useMemo, createContext, useState, useEffect } from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { grey } from '@mui/material/colors';
 import { CssBaseline } from '@mui/material';
 
 import Loader from './components/Loader';
-
-const Layout = React.lazy(()=> import('./components/Layout'))
+import Layout from './components/Layout';
 
 const handleTheme = (mode) => ({
   palette: {
@@ -57,16 +56,25 @@ export const ThemeModeContext = createContext('darkModeTheme')
 
 function App() {
   const [themeMode, setThemeMode] = useState('dark')
+  const [loading, setLoading] = useState(true)
 
   const darkModeTheme = useMemo(() => createTheme(handleTheme(themeMode)), [themeMode])
+
+  const handleLoading = () => setTimeout(() => setLoading(false), 2000)
+  
+  useEffect(()=>{
+    handleLoading()
+  },[])
+
+  if(loading){
+    return <Loader />
+  }
 
   return (
     <ThemeProvider theme={darkModeTheme}>
       <CssBaseline />
       <ThemeModeContext.Provider value={{ themeMode, setThemeMode }}>
-        <Suspense fallback={<Loader />}>
           <Layout />
-        </Suspense>
       </ThemeModeContext.Provider>
     </ThemeProvider>
   );

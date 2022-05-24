@@ -37,14 +37,19 @@ const Hero = () => {
                 variant="body2"
                 component="p"
                 sx={{
-                    maxWidth: 600,
+                    maxWidth: 700,
                     fontSize: 20,
                 }}
                 color="text.grey"
             >
-                I'm a Front-end Engineer specializing in building
-                exceptional digital experiences. Currently, I'm focused on building accessible,
-                human-centered products at <StyledLink href="https://irecharge.ng">iRecharge</StyledLink>.
+                <span style={{paddingRight:4}}>
+                    I'm a Front-end Engineer specializing in building
+                    exceptional digital experiences. Currently, I'm focused on building accessible,
+                    human-centered products at
+                </span>  
+                 <StyledLink href="https://www.istrategytech.com/" target="_blank">
+                     Infostrategy-tech (iRecharge)
+                </StyledLink>.
             </Typography>
             <Box
                 variant="outlined"

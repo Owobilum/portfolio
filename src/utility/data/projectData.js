@@ -22,21 +22,27 @@ export const porfolioProjectData = [
 
 export const liveProjectData = [
     {
-        title: 'iRecharge Web v2',
+        title: 'iRecharge',
         description: 'A bill payment and data management system for selling and purchasing electricity, airtime, data and TV subscriptions.',
         stack: ['Next JS', 'Redux', 'Material UI'],
         site: 'https://www.irecharge.ng/'
     },
     {
-        title: 'Accelerate',
-        description: 'A payment collection solution for merchants.',
-        stack: ['React JS', 'Redux', 'Material UI'],
-        site: 'https://accelerate-web.netlify.app/home'
+        title: 'NEPZA Online Partners Management System',
+        description: 'A solution for digitizing the processes of the Nigeria Export Processing Zones Authority',
+        stack: ['React JS', 'Material UI'],
+        site: 'https://nepzaopms.com/'
     },
+    // {
+    //     title: 'Accelerate',
+    //     description: 'A payment collection solution for merchants.',
+    //     stack: ['React JS', 'Redux', 'Material UI'],
+    //     site: 'https://accelerate-web.netlify.app/home'
+    // },
     {
         title: 'Adara Dashboard',
         description: 'A system for managing beneficiary data and product inventory of an NGO.',
-        stack: ['React JS', 'Redux', 'Reactstrap'],
+        stack: ['React JS', 'Redux', 'React Bootstrap'],
         site: 'http://tcp.adarafoundation.org/'
     }
 ]
