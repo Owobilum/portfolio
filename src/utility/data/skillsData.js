@@ -8,7 +8,8 @@ import reduxLogo from '../../images/logos/redux.svg'
 import materialLogo from '../../images/logos/material-ui.svg'
 import tailwindLogo from '../../images/logos/tailwind-css.svg'
 import gitLogo from '../../images/logos/git.svg'
-
+import testingLibraryLogo from '../../images/logos/testing-library.png'
+import jestLogo from '../../images/logos/jest.svg'
 
 export const skillsData = [
     { name: 'HTML', logo: htmlLogo },
@@ -20,5 +21,7 @@ export const skillsData = [
     { name: 'Redux', logo: reduxLogo },
     { name: 'Material UI', logo: materialLogo },
     { name: 'Tailwind CSS', logo: tailwindLogo },
-    { name: 'Git', logo: gitLogo }
+    { name: 'Git', logo: gitLogo },
+    { name:'Jest', logo: jestLogo},
+    { name:'Testing Library', logo: testingLibraryLogo}
 ]

@@ -8,6 +8,16 @@ import SectionLayout from "../SectionLayout"
 const Skills = () => {
     const isMobile = useMediaQuery('(max-width:599px)')
 
+    const classes = {
+        skill: {
+            transition: 'transform 0.2s ease-in-out',
+            ":hover": {
+                color: 'text.secondary',
+                transform: 'translateY(-4px)'
+            },
+        }
+    }
+
     return (
         <SectionLayout>
             <SectionHead place={"02"} title={"My Skills"} id="skills" />
@@ -28,7 +38,12 @@ const Skills = () => {
             >
                 {
                     skillsData && skillsData.map(({ name, logo }) => (
-                        <Grid item xs={4} md={2} key={name}>
+                        <Grid item xs={4} md={2} key={name} sx={{...classes.skill}}>
+                            {isMobile && 
+                                <Typography component="p" variant="body2" sx={{color: 'text.grey'}}>
+                                    {name}
+                                </Typography>
+                            }
                             <Tooltip title={name} placement="top">
                                 <Box component="img" src={logo} alt={name}
                                     sx={name !== "Next" ? { width: '100%' } : { width: '100%', backgroundColor: '#fff', px: 1 }}
@@ -38,7 +53,6 @@ const Skills = () => {
                         </Grid>
                     ))
                 }
-
             </Grid>
         </SectionLayout>
     )
