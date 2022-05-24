@@ -29,7 +29,7 @@ export const liveProjectData = [
     },
     {
         title: 'NEPZA Online Partners Management System',
-        description: 'A solution for digitizing the processes of the Nigeria Export Processing Zones Authority',
+        description: 'A solution for digitizing the processes of the Nigeria Export Processing Zones Authority.',
         stack: ['React JS', 'Material UI'],
         site: 'https://nepzaopms.com/'
     },
